@@ -1,0 +1,45 @@
+# Addon description
+
+class CfgPatches {
+
+	class CLASSNAME {
+		units[] = {	
+					};
+		weapons[] = {
+						};
+		requiredVersion = 0.100000;
+		requiredAddons[] = {};
+		fileName = "PBONAME.pbo";
+		author = "W";
+	};
+};
+
+class CfgFactionClasses {
+
+	class FACTIONNAME {
+		displayName = "";
+		priority = 1;
+		side = 1;
+};
+
+class CfgVehicleClasses {
+
+	class VEHCLASS {
+		displayName = "";
+	};
+};
+
+class CfgVehicles {
+		
+	/*CUSTOMCATEGORY*/
+	/*extern*/ class <orig_class>;
+
+
+/*CUSTOMCATEGORY*/	
+		
+	class <cust_class> : <orig_class> {
+		faction = "FACTIONNAME";
+		vehicleClass = "VEHCLASS";
+		displayName = "";
+		enableGPS = 1; };
+};
